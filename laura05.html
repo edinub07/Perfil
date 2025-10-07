@@ -1,40 +1,45 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mingyeong Kang - El Romance de Iseop</title>
+
   <!-- Bootstrap y jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"/>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    
-  <!-- Fuentes elegantes -->
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500&family=Baloo+2:wght@400;600&display=swap" rel="stylesheet">
-  
-  <!-- Íconos Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M3U7mU+2niqulzehbdND3z8aNV" 
-  crossorigin="anonymous">
 
-  <!-- Estilos -->
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
   <style>
+    :root {
+      --pomp-and-power: rgba(100, 76, 156, 0.85);
+      --feldgrau: rgba(47, 10, 88, 0.9);
+      --ash-gray: rgba(255, 255, 255, 0.909);
+    }
+
     body {
-      background-color: #d8d8f6;
-      font-family: 'Trebuchet MS', Arial, sans-serif;
+      background: url("Jibaku shounen.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
     }
 
     .container {
-      background-color: #ffffff;
-      border-radius: 12px;
+      background-color: var(--ash-gray);
+      border-radius: 15px;
       max-width: 900px;
-      margin: auto;
+      margin: 50px auto;
       box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-      padding: 35px;
+      padding: 30px;
     }
 
     .header {
@@ -46,14 +51,14 @@
       width: 200px;
       height: 200px;
       border-radius: 50%;
+      border: 5px solid var(--feldgrau);
       object-fit: cover;
-      border: 5px solid #b39ddb;
     }
 
     h1 {
+      font-family: 'Pacifico', cursive;
       font-size: 38px;
-      color: #5e35b1;
-      margin-bottom: 5px;
+      color: var(--feldgrau);
     }
 
     h2 {
@@ -76,7 +81,7 @@
     .section-title {
       font-weight: bold;
       color: #000;
-      background-color: #e8e0ff;
+      background-color: rgba(174, 160, 240, 0.2);
       padding: 10px;
       border-radius: 8px;
       font-size: 18px;
@@ -94,8 +99,8 @@
 
     .bio {
       margin-top: 25px;
-      background-color: #f1e4ff;
-      border-left: 5px solid #9575cd;
+      background-color: rgba(214, 200, 255, 0.3);
+      border-left: 5px solid var(--feldgrau);
       border-radius: 8px;
       padding: 15px;
       font-style: italic;
@@ -108,27 +113,21 @@
       color: #777;
       font-size: 0.9em;
     }
-
-    input:focus {
-      outline: none;
-    }
   </style>
 </head>
 <body>
-
+  <!-- Contenido principal -->
   <div class="container">
-    <!-- Encabezado -->
     <div class="header">
       <img src="https://i.pinimg.com/originals/d0/a0/75/d0a0759e5029c9117a8479e6285930ac.png" alt="Mingyeong Kang">
       <h1>Mingyeong Kang</h1>
       <h2>Diseñadora e Ilustradora - El Romance de Iseop</h2>
     </div>
 
-    <!-- Información Básica -->
     <table>
       <tr>
         <td colspan="2" class="section-title">
-          <i class="fa fa-user" style="color: gray;"></i> INFORMACIÓN BÁSICA
+          <i class="fa fa-user"></i> INFORMACIÓN BÁSICA
         </td>
       </tr>
       <tr>
@@ -157,11 +156,10 @@
       </tr>
     </table>
 
-    <!-- Información de Empleo -->
     <table>
       <tr>
         <td colspan="2" class="section-title">
-          <i class="fa fa-check-square" style="color: gray;"></i> INFORMACIÓN DE EMPLEO
+          <i class="fa fa-check-square"></i> INFORMACIÓN DE EMPLEO
         </td>
       </tr>
       <tr>
@@ -184,7 +182,6 @@
       </tr>
     </table>
 
-    <!-- Biografía -->
     <div class="bio">
       Mingyeong Kang es una joven creativa, apasionada por el arte y el diseño visual.  
       Desde pequeña mostró interés por la ilustración y la moda, lo que la llevó a estudiar diseño.  
@@ -195,11 +192,11 @@
       Su meta es abrir su propio estudio de arte y convertirse en una referente del diseño emocional en Corea.
     </div>
 
-    <!-- Pie -->
     <div class="footer">
-      💜 Perfil de personaje creado por Lauu 💐 | Inspirado en *El Romance de Iseop*
+      💜 Perfil de personaje creado por Lauu 💐 | Inspirado en *El Romance de Iseop*  
+      <br><br>
+      <a href="laura.html" class="btn btn-primary">Volver a la pagina principal</a>
     </div>
   </div>
-
 </body>
 </html>
